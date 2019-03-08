@@ -8,6 +8,10 @@ app.get('/', function (req, res) {
   res.send('Welcome home!')
 })
 
+app.get('/Nishanth', function (req, res) {
+  res.send('Hello I am Nishanth Reddy. This is what I added')
+})
+
 app.get('/hello', (req, res) => {
   res.send('Hello World!')
 })
