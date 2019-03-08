@@ -9,23 +9,23 @@ app.get('/', function (req, res) {
 })
 
 app.get('/Nishanth', function (req, res) {
-  res.send('Hello I am Nishanth Reddy. This is what I added')
+  res.send('<p style="background-color:grey;">Hello I am <b style="color:Orange;">Nishanth Reddy</b>.<br> This is what I added</p>')
 })
 
 app.get('/hello', (req, res) => {
   res.send('Hello World!')
 })
 
-app.get('/big',  (req, res) =>{
-  res.send('<h1>Hello World!</h1>')
+app.get('/respond',  (req, res) =>{
+  res.send('<h1 style="color:green;">Good to go</h1>')
 })
 
-app.get('/greeting/:id',  (req, res) =>{
-  res.send('Hello! The id was ' + req.params.id)
+app.get('/greeting',  (req, res) =>{
+  res.send('<h1 style="color:Orange;">How are you!</h1> ')
 })
 
-app.get('/yo/:buddy',  (req, res) =>{
-  res.send('<h1>Yo, ' + req.params.buddy + '!</h1>')
+app.get('/buddy',  (req, res) =>{
+  res.send('<h1 style="color:Tomato;">Hey dude</h1>')
 })
 
 // handle non-existant routes
